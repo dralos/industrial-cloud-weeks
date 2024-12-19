@@ -1,0 +1,4 @@
+execute docker-compose up -d 
+
+import json to postman
+
