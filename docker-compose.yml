@@ -1,0 +1,11 @@
+services:
+  backend: 
+    image: server
+    container_name: server
+    restart: unless-stopped
+    build: 
+      context: ./
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env

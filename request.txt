@@ -1,0 +1,29 @@
+Test Tecnico per Sviluppatore Backend
+1. Configurazione Docker
+    • Creare una istanza per MongoDB.
+    • Caricare i dati di prova nel database MongoDB all'avvio del contenitore. Esempio di dati di prova:
+
+
+{
+  "weekPrices_1": [1, 2, 3, 4, 5, 6], 15
+  "weekPrices_2": [6, 5, 4, 3, 2, 1], 0
+  "weekPrices_3": [1, 6, 5, 10, 8, 7], 18
+  "weekPrices_4": [1, 2, 10, 2, 4, 6] = 23
+}
+
+> Nota: Il primo indice dell'array rappresenta lunedì.
+
+
+2. Sviluppo dell'Applicazione
+    • Collegare l'applica - una insert data of the week 
+      -  zione a MongoDB.
+    • Calcolare il profitto massimo da una quotazione azionaria. Il profitto è la differenza tra i prezzi di acquisto e vendita delle azioni. Ogni giorno si può:
+        ◦ Acquistare un'unità di un titolo.
+        ◦ Vendere unità già acquistate.
+        ◦ Non fare nulla.
+    • Implementare un'API per inserire e restituire i dati.
+
+
+3. Esecuzione in Docker
+    • Creare un contenitore Docker per l'applicazione.
+    • Eseguire il contenitore e testare l'API.
